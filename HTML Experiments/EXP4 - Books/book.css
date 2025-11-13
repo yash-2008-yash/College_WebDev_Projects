@@ -1,0 +1,19 @@
+body {
+  background-color: blueviolet;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(77, 1, 148);
+}
+
+* {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}

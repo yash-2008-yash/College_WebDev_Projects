@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info</title>
+    <link rel="stylesheet" href="exp3 user info (form).css" />
+  </head>
+  <body>
+    <center>
+      <h1>USER INFORMATION FORM</h1>
+      <br />
+      <br />
+      <br />
+      <form action="get">
+      <label for="username">NAME</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Ex: Elon Musk"
+        required
+      />
+      <br />
+      <br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">MALE</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">FEMALE</label>
+      <br />
+      <br />
+      <label for="number">CONTACT NUMBER</label>
+      <input type="text" id="number" name="number" placeholder="xxxxxxxxxx" />
+      <br />
+      <br />
+      <label for="email">EMAIL ID</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="something@example.com"
+      />
+      <br />
+      <br />
+      <label for="country">COUNTRY</label>
+      <select id="country" name="country">
+        <option value="select">SELECT</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+      </select>
+      <br /><br />
+      <label for="state">STATE</label>
+      <select id="state" name="state">
+        <option value="select">SELECT</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="tamil nadu">Tamil Nadu</option>
+        <option value="andhra">Andhra Pradesh</option>
+        <option value="kerala">Kerala</option>
+        <option value="north">North States</option>
+      </select>
+      <br />
+      <br />
+      <label for="city">CITY</label>
+      <select id="city" name="city">
+        <option value="select">SELECT</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="mangalore">Mangalore</option>
+        <option value="mysuru">Mysuru</option>
+      </select>
+      <br /><br />
+      <!-- <input type="button" id="submit" value="submit" />
+      <input type="button" id="reset" value="reset" /> -->
+      <button type="submit">SUBMIT</button>
+      <button type="reset">RESET</button>
+      <br /><br /><br /><br />
+      <footer>Copyright © <b>YASHWANTH M</b></footer>
+    </center>
+  </form>
+  </body>
+</html>
