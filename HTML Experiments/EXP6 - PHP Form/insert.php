@@ -16,13 +16,13 @@ if ($connection->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] == 'post') {
     // Get the form data
     $name = $_POST['name'];
-    $rollno = $_POST['rollno'];
+    $roll_no = $_POST['roll_number'];
     $age = $_POST['age'];
     $phone = $_POST['phone'];
 
     // Prepare and bind the SQL statement using prepared statements for security
-    $stmt = $connection->prepare('INSERT INTO table(name,rollno,age,phone) VALUES (?,?,?,?)');
-    $stmt->blind_param('siii', $name, $rollno, $age, $phone);  // "siii" for string-integer-integer-integer
+    $stmt = $connection->prepare('INSERT INTO table(name,roll_number,age,phone) VALUES (?,?,?,?)');
+    $stmt->bind_param('siii', $name, $roll_number, $age, $phone);  // "siii" for string-integer-integer-integer
 
     // Execute the statement
     if ($stmt->execute()) {
@@ -37,4 +37,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'post') {
 
 // Close the connection
 $connection->close();
-?>
