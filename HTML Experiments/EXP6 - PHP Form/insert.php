@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'post') {
 
     // Prepare and bind the SQL statement using prepared statements for security
     $stmt = $connection->prepare('INSERT INTO table(name,roll_number,age,phone) VALUES (?,?,?,?)');
-    $stmt->bind_param('siii', $name, $roll_number, $age, $phone);  // "siii" for string-integer-integer-integer
+    $stmt->bind_param('siii', $name, $roll_number, $age, $phone);
 
     // Execute the statement
     if ($stmt->execute()) {
